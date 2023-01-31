@@ -1,0 +1,39 @@
+.mission {
+  padding-bottom: 270px;
+  background-color: $color-white;
+
+  &__item {
+    padding-top: 71px;
+    text-align: center;
+    background-position: top center;
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+
+    &--quality {
+      background-image: url('../img/like.svg');
+    }
+    
+    &--safety {
+      background-image: url('../img/safety.svg');
+    }
+    
+    &--comfort {
+      background-image: url('../img/comfort.svg');
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    color: $color-ebony-black;
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 160%;
+    color: $color-zinc-gray;
+  }
+
+}

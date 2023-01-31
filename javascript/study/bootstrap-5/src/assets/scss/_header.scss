@@ -1,0 +1,50 @@
+.header {
+  &-list {
+    margin-left: 2rem !important;
+
+    a {
+      color: $color-gray !important;
+      font-weight: 700;
+    }
+  }
+
+  &-contacts {
+    &__link {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding-left: 40px;
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 30px 30px;
+
+      &--tel {
+        background-image: url('../img/mobile-phone-ringing-icon.svg');
+        margin-right: 2rem;
+      }
+
+      &--mail {
+        background-image: url('../img/quotes-icon.svg');
+      }
+
+      span:first-child {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 150%;
+        color: $color-gray;
+      }
+
+      span:last-child {
+        font-weight: 400;
+        font-size: 18px;
+        color: $color-gray;
+      }
+
+
+  
+    }
+  }
+}
+
+

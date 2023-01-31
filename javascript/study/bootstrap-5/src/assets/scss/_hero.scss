@@ -1,0 +1,60 @@
+.hero {
+  background-color: $color-gray;
+  background-image: url('../img/terex-3.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 155px;
+
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: .5;
+    z-index: 1;
+  }
+
+  &__inner {
+  z-index: 2;
+
+    h1 {
+      color: $color-white;
+      /* font-size: 72px; */
+      font-size: 5.15vw;
+      font-weight: 700;
+      line-height: 130%;
+      letter-spacing: 1px;
+      @media (max-width: 576px) {
+        font-size: 30px;
+      }
+    }
+  
+    p {
+      font-size: 20px;
+      color: $color-storm-gray;
+      line-height: 150%;
+      margin-bottom: 60px;
+      @media (max-width: 567px) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__buttons {
+    @media (max-width: 567px) {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center;
+      button:first-child {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
